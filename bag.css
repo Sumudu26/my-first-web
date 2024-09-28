@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    scrollbar-width: 20px;
+    scrollbar-color: var(--secondary-color) #f1f1f1;
+}
+
+:root {
+    --primary-color: #ff6d46;
+    --secondary-color: #ecfdf8;
+    --secondary-light-color: #121011;
+    --secondary-dark-color: #fff;
+    --box-shadow: 0 0 16px 1px rgb(14 52 54 / 15%);
+}
+
+body {
+    padding: 0 5rem;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    background-color: var(--primary-color);
+    padding: .9rem 5rem;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+nav>img {
+    width: 2.5rem;
+    position: absolute;
+    left: 5rem;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-weight: 500;
+    color: var(--secondary-light-color);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+nav>ul>li>a {
+    transition-duration: .1s;
+    color: var(--secondary-color);
+}
+
+nav>ul>li:hover a {
+    color: var(--secondary-light-color);
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+
+}
+
+.home-text {
+    min-width: 50%;
+}
+
+.home-text h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.home-text h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+}
+
+.home-text span {
+    color: var(--secondary-light-color);
+}
+
+.home-text p {
+    max-width: 80%;
+    font-size: 0.93rem;
+    margin: 00.5rem 0 1.5rem;
+}
+
+.button {
+    padding: .6rem 2rem;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition-duration: .3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.bag {
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-3.5rem);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(-3.5rem);
+    }
+}
+
+.about {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    gap: 1.5rem;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+
+}
+
+.about-text p {
+    font-size: 0.838rem;
+    margin: 0.2rem 0 1rem;
+}
+
+.about img {
+    animation: float 05s linear infinite;
+
+}
+
+.about img {
+    width: 30rem;
+}
+
+.line-1 {
+    text-align: center;
+}
+
+.line-1>h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.products-box {
+    width: 200%;
+}
+
+.card-1 {
+    border: 1px solid var(--secondary-light-color);
+    border-radius: 1rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+
+}
+
+.card-1 img {
+    width: 150px;
+    height: 15rem;
+    margin-top: -2rem;
+
+}
+
+.card-1>div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 0.8rem;
+
+}
+
+.card-2 {
+    border: 1px solid var(--secondary-light-color);
+    border-radius: 1rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+
+
+}
+
+.card-2 img {
+    width: 150px;
+    height: 15rem;
+    margin-top: -2rem;
+
+}
+
+.card-2>div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 0.8rem;
+
+}
